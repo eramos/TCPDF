@@ -3,14 +3,10 @@
   "version": "4.8.034",
   "homepage": "http://www.tcpdf.org/",
   "type": "library",
-  "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+  "description": "Downgraded version of TCPDF",
   "keywords": [
     "PDF",
     "tcpdf",
-    "PDFD32000-2008",
-    "qrcode",
-    "datamatrix",
-    "pdf417",
     "barcodes"
   ],
   "license": "LGPL-3.0",
@@ -27,12 +23,9 @@
   "autoload": {
     "classmap": [
       "config",
-      "fonts",
       "tcpdf.php",
       "2dbarcodes.php",
-      "barcodes.php",
-      "htmlcolors.php",
-      "unicode_data.php"
+      "barcodes.php"
     ]
   }
 }
