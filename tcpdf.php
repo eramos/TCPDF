@@ -5183,7 +5183,8 @@ if (!class_exists('TCPDF', false)) {
                         fwrite($f, $this->getBuffer(), $this->bufferlen);
                         fclose($f);
                     }
-                    break;
+
+                    return $name;
                 }
                 case 'S': {
                     // Returns PDF as a string
@@ -11369,7 +11370,7 @@ if (!class_exists('TCPDF', false)) {
         */
         protected function _toJPEG($image)
         {
-            $tempname = tempnam(K_PATH_CACHE, 'jpg_');
+            $tempname = tempnam('/glst/tmp', 'jpg_');
             imagejpeg($image, $tempname, $this->jpeg_quality);
             imagedestroy($image);
             $retvars = $this->_parsejpeg($tempname);

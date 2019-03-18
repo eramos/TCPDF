@@ -57,15 +57,17 @@ if (substr($k_path_main, -1) != '/') {
 define('K_PATH_MAIN', $k_path_main);
 
 // Automatic calculation for the following K_PATH_URL constant
-if (isset($_SERVER['HTTP_HOST']) and (!empty($_SERVER['HTTP_HOST']))) {
-    if (isset($_SERVER['HTTPS']) and (!empty($_SERVER['HTTPS'])) and strtolower($_SERVER['HTTPS'])!='off') {
-        $k_path_url = 'https://';
-    } else {
-        $k_path_url = 'http://';
-    }
-    $k_path_url .= $_SERVER['HTTP_HOST'];
-    $k_path_url .= str_replace('\\', '/', substr($_SERVER['PHP_SELF'], 0, -24));
-}
+// if (isset($_SERVER['HTTP_HOST']) and (!empty($_SERVER['HTTP_HOST']))) {
+//     if (isset($_SERVER['HTTPS']) and (!empty($_SERVER['HTTPS'])) and strtolower($_SERVER['HTTPS'])!='off') {
+//         $k_path_url = 'https://';
+//     } else {
+//         $k_path_url = 'http://';
+//     }
+//     $k_path_url .= $_SERVER['HTTP_HOST'];
+//     $k_path_url .= str_replace('\\', '/', substr($_SERVER['PHP_SELF'], 0, -24));
+// }
+
+$k_path_url = '/glst/tmp';
 
 /**
  * URL path to tcpdf installation folder (http://localhost/tcpdf/).
@@ -82,7 +84,7 @@ define('K_PATH_FONTS', K_PATH_MAIN.'fonts/');
 /**
  * cache directory for temporary files (full path)
  */
-define('K_PATH_CACHE', _OKN_TMP_DIRECTORY);
+define('K_PATH_CACHE', K_PATH_MAIN.'cache/');
 
 /**
  * cache directory for temporary files (url path)

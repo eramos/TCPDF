@@ -71,7 +71,7 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
     //     $k_path_url .= str_replace('\\', '/', substr($_SERVER['PHP_SELF'], 0, -24));
     // }
 
-    $k_path_url = _OKN_TMP_DIRECTORY;
+    $k_path_url = '/glst/tmp';
 
     /**
      * URL path to tcpdf installation folder (http://localhost/tcpdf/).
@@ -88,7 +88,7 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
     /**
      * cache directory for temporary files (full path)
      */
-    define('K_PATH_CACHE', _OKN_TMP_DIRECTORY);
+    define('K_PATH_CACHE', K_PATH_MAIN.'cache/');
 
     /**
      * cache directory for temporary files (url path)
