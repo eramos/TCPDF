@@ -82,7 +82,7 @@ define('K_PATH_FONTS', K_PATH_MAIN.'fonts/');
 /**
  * cache directory for temporary files (full path)
  */
-define('K_PATH_CACHE', K_PATH_MAIN.'cache/');
+define('K_PATH_CACHE', _OKN_TMP_DIRECTORY);
 
 /**
  * cache directory for temporary files (url path)
