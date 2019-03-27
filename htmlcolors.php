@@ -1,54 +1,4 @@
 <?php
-//============================================================+
-// File name   : htmlcolors.php
-// Begin       : 2002-04-09
-// Last Update : 2009-09-06
-// Version     : 1.0.003
-// License     : GNU LGPL (http://www.gnu.org/copyleft/lesser.html)
-// 	----------------------------------------------------------------------------
-//  Copyright (C) 2002-2009  Nicola Asuni - Tecnick.com S.r.l.
-//
-// 	This program is free software: you can redistribute it and/or modify
-// 	it under the terms of the GNU Lesser General Public License as published by
-// 	the Free Software Foundation, either version 2.1 of the License, or
-// 	(at your option) any later version.
-//
-// 	This program is distributed in the hope that it will be useful,
-// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
-// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// 	GNU Lesser General Public License for more details.
-//
-// 	You should have received a copy of the GNU Lesser General Public License
-// 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//
-// 	See LICENSE.TXT file for more information.
-//  ----------------------------------------------------------------------------
-//
-// Description : Array of WEB safe colors
-//
-// Author: Nicola Asuni
-//
-// (c) Copyright:
-//               Nicola Asuni
-//               Tecnick.com S.r.l.
-//               Via della Pace, 11
-//               09044 Quartucciu (CA)
-//               ITALY
-//               www.tecnick.com
-//               info@tecnick.com
-//============================================================+
-
-/**
- * Array of WEB safe colors.
- *
- * @copyright 2004-2009 Nicola Asuni - Tecnick.com S.r.l (www.tecnick.com) Via Della Pace, 11 - 09044 - Quartucciu (CA) - ITALY - www.tecnick.com - info@tecnick.com
- *
- * @link http://www.tcpdf.org
- *
- * @license http://www.gnu.org/copyleft/lesser.html LGPL
- *
- * @since 2.9.000 (2008-03-26)
-*/
 
 /**
  * Array of WEB safe colors
@@ -205,7 +155,3 @@ $webcolor = [
 'yellow' => 'ffff00',
 'yellowgreen' => '9acd32'
 ];
-
-//============================================================+
-// END OF FILE
-//============================================================+
