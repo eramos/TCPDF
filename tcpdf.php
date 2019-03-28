@@ -5555,8 +5555,8 @@ class TCPDF
     /**
     * Translate graphic object horizontally and vertically.
     *
-    * @param int $t_x movement to the right
-    * @param int $t_y movement to the bottom
+    * @param float $t_x movement to the right
+    * @param float $t_y movement to the bottom
     * @access public
     *
     * @since 2.1.000 (2008-01-07)
